@@ -4,13 +4,11 @@
 }
 
 body {
-  background-image: url("../../img/noTelefone.jpg");
-  background-size: cover;
-  color: white;
-  font-family: sans-serif;
+  
+  height: auto;
 }
 
-#mainConteiner, header, form, fieldset, aside, footer {
+header, form, fieldset, aside, footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -19,35 +17,40 @@ body {
 }
 
 #mainConteiner {
+  background-image: url("../../img/noTelefone.jpg");
+  background-size: cover;
+  background-clip: border-box;
+  color: white;
+  font-family: sans-serif;
+  margin: 0 auto;
   background-color: rgba(128, 0, 196, 0.8);
   min-width: 360px;
   width: 90%;
+  height: auto;
 }
 
 form, fieldset, aside {
   border-radius: 1.2rem;
-  min-width: 360px;
 }
 
 header, footer{
   background-color: rgba(64, 0, 196, 0.8);
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   align-items: center;
 }
 
 form {
   margin: 1vh auto;
   padding: 40px 5px;
-  min-width: 360px;
-  max-width: 600px;
   background-color: rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  min-width: 360px;
+
 }
 
 fieldset{
   border-radius: 0.4rem;
-  width: 100%;
-  min-width: 350px;
   padding: 40px auto;
   border:none;
   text-align: center;
@@ -60,8 +63,8 @@ fieldset{
 
 fieldset legend {
   font-weight: bold;
-  color: #c0f;
-  text-shadow: 1px 1px #fff;
+  color: #fff;
+  text-shadow: 1px 1px #000;
   line-height: 50px;
 }
 
@@ -69,9 +72,11 @@ input,  select{
   border-radius: 0.4rem;
   height: 50px;
   min-width: 220px;
-  width: 80%;
+  width: 90%;
   margin: 10px;
-  font-weight: bold; 
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px; 
 }
 
 #titulo{
@@ -79,24 +84,42 @@ input,  select{
   text-shadow: 2px 4px #000;
 }
 
-#message{ width: 90%; height: 40vh; margin: 25px auto; border-radius: 0.8rem; font-size: 1rem;}
-
-.botoes button{
-  width: 250px;
-  height: 50px;
-  align-content: space-around;
-  margin: 10px auto;
-  border: none;
-  border-radius: 0.6rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #777;
+.subject, .remetente {
+  border: 1px solid #fff;
+  max-width: 500px;
 }
 
-.botoes button :hover {
+#message{ width: 96%; height: 25vh; margin: 25px auto;
+  border-radius: 0.8rem; font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+
+.botoes {
+  background-color: rgba(255, 255, 255, 0.4);
+  justify-content: space-around;
+  width: 100%;
+   
+}
+
+.botoes button {
+  line-height: 60px;
+  width: 230px;
+  border-radius: 0.8rem;
+  margin: 40px auto 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.botoes button:hover {
   color: #000;
+  opacity: 0.6;
 }
 
 #btn-submit{
-  background-color: rgb(129, 5, 160);
+  background-color: rgb(139, 231, 19);
+}
+
+footer{
+  margin-bottom: 0;
 }
