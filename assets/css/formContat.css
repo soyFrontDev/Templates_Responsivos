@@ -1,0 +1,114 @@
+/* RESET CSS BROWSERS FORMAT */
+* { margin:0; padding:0; text-decoration: none; box-sizing:border-box;
+  list-style: none;
+
+}
+
+body {
+  background-image: url("../../img/noTelefone.jpg");
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+}
+
+#mainConteiner, header, form, fieldset, aside, footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+#mainConteiner {
+  background-color: rgba(128, 0, 196, 0.8);
+  min-width: 360px;
+  width: 90%;
+  
+}
+
+form, fieldset, aside {
+  border-radius: 1.2rem;
+  min-width: 360px;
+}
+
+
+
+header, footer{
+  background-color: rgba(64, 0, 196, 0.8);
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  
+}
+
+form {
+ 
+  margin: 1vh auto;
+  padding: 40px 5px;
+  min-width: 360px;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+}
+
+fieldset{
+  border-radius: 0.4rem;
+  width: 100%;
+  min-width: 350px;
+  padding: 80px auto;
+  border:none;
+  text-align: center;
+  margin: 2vh auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;    
+}
+
+fieldset legend {
+  font-weight: bold;
+  color: #c0f;
+  text-shadow: 1px 1px #fff;
+  line-height: 50px;
+    
+}
+
+input,  select{
+  border-radius: 0.4rem;
+  height: 50px;
+  min-width: 220px;
+  width: 80%;
+  margin: 10px;
+  font-weight: bold; 
+}
+
+#titulo{
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 4px #000;
+}
+
+#message{ width: 90%; height: 40vh; margin: 25px auto; border-radius: 0.8rem; font-size: 1rem;}
+
+.botoes button{
+  width: 250px;
+  height: 50px;
+  align-content: space-around;
+  margin: 10px auto;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #777;
+}
+
+.botoes button a :hover {
+  color: #000;
+
+}
+
+#btn-submit{
+  background-color: rgb(129, 5, 160);
+  
+}
+

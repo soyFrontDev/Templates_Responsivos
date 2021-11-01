@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/formContat.css">
+  <title>Contato</title>
+</head>
+<body>
+
+  <!-- Conteiner que abriga todo o conteudo do site para controle de 
+    dimensionamento e organização dos conteiner filhos-->
+  <div id="mainConteiner">
+    <header>
+      <h1 id="titulo">FALE CONOSCO</h1>
+    </header>
+    <form method="post" action="formContact.html" target="_self">
+      <!-- Fieldset para organizar caixas de entrada  -->
+      <fieldset class="remetente"><legend>Remetente</legend>
+        
+        <input type="text" name="name" id="name" maxlength="20" placeholder="Seu Nome" required>
+        
+        <input type="text" name="lastname" id="lastname" maxlength="40" placeholder="Seu Sobrenome"required>
+        
+        <input type="email" name="mail" id="mail" placeholder="seuemail@dominio" required>
+      </fieldset> 
+      <fieldset class="subject"><legend>Assunto</legend>
+        <select name="typeSubject" id="typeSubject">
+          <option checked>Informações</option>
+          <option>Contratar</option>
+          <option>Parceria</option>
+          <option>Outro</option>
+        </select>
+        <textarea name="message" id="message" placeholder="Digite sua Mensagem">
+
+        </textarea>
+      </fieldset>
+      <!-- Conteiner que abriga somente os botoes para responsividade-->
+      <fieldset class="botoes">
+        <button type="submit" value="enviar" id="btn-submit">Enviar</button>
+        <button type="reset" value="reset">Limpar</button>
+      </fieldset>
+    </form>
+    <footer>
+      <p>Todos os Direitos Reservados</p>
+    </footer>
+  </div>
+</body>
+</html>
+
